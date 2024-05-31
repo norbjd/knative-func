@@ -72,6 +72,10 @@ spec:
     env:
       - name: CNB_PLATFORM_API
         value: "0.10"
+      - name: CNB_INSECURE_REGISTRIES
+        value: "kind-registry:5000"
+      - name: CNB_LOG_LEVEL
+        value: "debug"
 
   steps:
     - name: prepare
